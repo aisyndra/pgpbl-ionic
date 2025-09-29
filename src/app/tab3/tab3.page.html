@@ -7,11 +7,48 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-item>
+    <ion-badge slot="end">22</ion-badge>
+    <ion-label>Badge in end slot</ion-label>
+  </ion-item>
+  <ion-label>Icons at Start</ion-label>
+<ion-breadcrumbs>
+  <ion-breadcrumb href="#home">
+    <ion-icon slot="start" name="home"></ion-icon>
+    Home
+  </ion-breadcrumb>
+  <ion-breadcrumb href="#electronics">
+    <ion-icon slot="start" name="flash"></ion-icon>
+    Electronics
+  </ion-breadcrumb>
+  <ion-breadcrumb href="#cameras">
+    <ion-icon slot="start" name="camera"></ion-icon>
+    Cameras
+  </ion-breadcrumb>
+  <ion-breadcrumb href="#film">
+    <ion-icon slot="start" name="film"></ion-icon>
+    Film
+  </ion-breadcrumb>
+</ion-breadcrumbs>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-label class="ion-margin-top">Icons at End</ion-label>
+<ion-breadcrumbs>
+  <ion-breadcrumb href="#home">
+    Home
+    <ion-icon slot="end" name="home"></ion-icon>
+  </ion-breadcrumb>
+  <ion-breadcrumb href="#electronics">
+    Electronics
+    <ion-icon slot="end" name="flash"></ion-icon>
+  </ion-breadcrumb>
+  <ion-breadcrumb href="#cameras">
+    Cameras
+    <ion-icon slot="end" name="camera"></ion-icon>
+  </ion-breadcrumb>
+  <ion-breadcrumb href="#film">
+    Film
+    <ion-icon slot="end" name="film"></ion-icon>
+  </ion-breadcrumb>
+</ion-breadcrumbs>
+
 </ion-content>
